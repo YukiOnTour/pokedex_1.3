@@ -10,17 +10,9 @@ const pokemonList = [
 
 // Loop through each Pokémon object in the array
 for (let i = 0; i < pokemonList.length; i++) {
-  // Get the current Pokémon object
   const pokemon = pokemonList[i];
   
-  // Write the Pokémon name and height to the DOM
-  document.write(`${pokemon.name} (type: ${pokemon.type}) (height: ${pokemon.height})<br>`);
-}
-
-for (let i = 0; i < pokemonList.length; i++) {
-  const pokemon = pokemonList[i];
-  
-  // Write the Pokémon name and height to the DOM
+  // Write the Pokémon name, type, height and - Wow, that's big! to the DOM
   if (pokemon.height > 10) {
     document.write(`${pokemon.name} (Type: ${pokemon.type}) (Height: ${pokemon.height}) - Wow, that's big!<br>`);
   } else {
